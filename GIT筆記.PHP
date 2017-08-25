@@ -55,7 +55,7 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 目前，在GitHub上的這個learngit倉庫還是空的，GitHub告訴我們，可以從這個倉庫克隆出新的倉庫，也可以把一個已有的本地倉庫與之關聯，然後，把本地倉庫的內容推送到GitHub倉庫。
 
 現在，我們根據GitHub的提示，在本地的learngit倉庫下運行命令：
-$ git remote add origin git@github.ph003003/git_name.git
+$ git remote add origin git@github.com:ph003003/coding_study_note.git
 添加後，遠程庫的名字就是origin，這是Git默認的叫法，也可以改成別的，但是origin這個名字一看就知道是遠程庫。
 下一步，就可以把本地庫的所有內容推送到遠程庫上：
 $ git push -u origin master
