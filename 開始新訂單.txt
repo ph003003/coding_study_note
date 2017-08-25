@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="jumbotron">
+				<h1>
+					開始新訂單
+				</h1></div>
+<button type="button" class="btn btn-lg btn-block disabled">自選餐廳</button> 
+<button type="button" class="btn btn-primary btn-lg btn-block">飲料</button>
+ <button type="button" class="btn btn-primary btn-block btn-lg">正餐</button>
+ 
+ <button type="button" class="btn btn-lg btn-block">隨機餐廳</button> 
+ <button type="button" class="btn btn-primary btn-lg btn-block">飲料</button>
+ <button type="button" class="btn btn-primary btn-lg btn-block">正餐</button>
+		</div>
+	</div>
+</div>

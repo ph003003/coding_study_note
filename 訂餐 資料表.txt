@@ -1,0 +1,13 @@
+訂單 資料表---	food_order
+	--(order_sn)訂單id
+	--(f_sn)選到的餐廳id
+	--(order_time)訂單時間
+	--(order_duty)訂單發起人、值日生
+	--(order_status)訂單是否進行中
+	
+訂單詳細內容(餐點統計)資料表-- food_order_detailed
+	--(detailed_sn)	詳細內容id
+	--(order_sn)	所屬關聯訂單的id
+	--(detaile_buyer) 點餐人姓名
+	--(meals) 餐點菜名
+	--(price) 餐點價格

@@ -1,0 +1,25 @@
+::要有標題 OK
+::點餐要三步驟布局 
+::餐廳資訊 在上方
+::登入不用登記姓名OK
+::要能ˊ增加輸入框(找技術長要js範例 apon) 能用 input name 取植 成陣列
+::要有備註 輸入框
+
+linebot的root.php 要多修正
+
+----------------
+如要刷新日曆令牌 要去以下新增轉祉
+https://console.developers.google.com/apis/credentials/oauthclient/439041763070-hccnmbngi931gmus2h0u2furbsfp79mg.apps.googleusercontent.com?project=a0234386
+recaptchalib 要去gooole 新增轉祉
+加上共幾天 幾小時 
+function path()
+{
+	$path1	= $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'];
+	$path2	= strrpos($path1,'/',0)+1;
+	$path	= substr($path1,0,$path2);
+	return $path;
+}
+$path 為伺服器的位址
+$path	locohost 沒有http 前蕞
+
+\\192.168.0.131\code$

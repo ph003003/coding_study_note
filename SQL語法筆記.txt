@@ -1,0 +1,4 @@
+fetchColumn 
+PDO-fetchColumn() 取得一個欄位資料(只能取一個欄位)
+
+有些時候，我們只想在資料表中取得某一個欄位資料，可以使用 fetchColumn()

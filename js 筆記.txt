@@ -1,0 +1,51 @@
+再为大家分享一个实例：js的确认框confirm()代码实例
+
+confirm()确认框在网页中比较常用，当然有些美观度要求比较高的网页可能需要自定义这样的功能，下面就来介绍一下window对象的confirm()函数的用法，下面县看一段代码实例，因为没有什么再比这个更直观了。
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="gb2312"> 
+<title>confirm()代码实例</title> 
+<script type="text/javascript"> 
+window.onload=function(){
+ var bt=document.getElementById("bt");
+ bt.onclick=function(){
+  if(confirm("真的要删除吗?")){
+   alert("点击了确认按钮");
+  }
+  else{
+   alert("点击了取消按钮");
+  }
+ }
+}
+</script> 
+</head> 
+<body> 
+<input type="button" id="bt" value="点击弹出确认框" />
+</body> 
+</html>
+在线运行
+
+以上代码是一个confirm的简单实例，可以很清晰的演示confirm()的作用，下面做一些总结:
+
+confirm()函数中的参数是确认框的提示语。
+此函数返回值是布尔型的，点击确定，返回值为true，点击取消返回值为false。
+
+
+----------------------------------------
+----------------------------------------
+js筆記
+Math.ceil() 無條件進位
+
+取餘數
+<script>
+  var a = 7;
+  var b = 4;
+  var c = 7 % 4;
+  
+  
+ class 取法 取到 html class="event-hours"
+$(".event-hours").on('blur', function(e) {
+
+});
