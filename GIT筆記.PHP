@@ -1,4 +1,5 @@
 <?php
+cd .. 後退目錄
 0::安裝完成後，還需要最後一步設置，在命令行輸入：
 git config --global user.name "ph003003"
 git config --global user.email "b93thcqn@gmail.com"
@@ -55,18 +56,27 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 目前，在GitHub上的這個learngit倉庫還是空的，GitHub告訴我們，可以從這個倉庫克隆出新的倉庫，也可以把一個已有的本地倉庫與之關聯，然後，把本地倉庫的內容推送到GitHub倉庫。
 
 現在，我們根據GitHub的提示，在本地的learngit倉庫下運行命令：
-$ git remote add origin git@github.com:ph003003/coding_study_note.git
-添加後，遠程庫的名字就是origin，這是Git默認的叫法，也可以改成別的，但是origin這個名字一看就知道是遠程庫。
+$ git remote add 【name】 git@github.com:ph003003/food_chack.git 
+添加後，遠程庫的名字就是【name】
 下一步，就可以把本地庫的所有內容推送到遠程庫上：
-$ git push -u origin master
+$ git push -u 【name】 master
 把本地庫的內容推送到遠程，用git push命令，實際上是把當前分支master推送到遠程。
 由於遠程庫是空的，我們第一次推送master分支時，加上了-u參數，Git不但會把本地的master分支內容推送的遠程新的master分支，
 還會把本地的master分支和遠程的master分支關聯起來，在以後的推送或者拉取時就可以簡化命令。
 推送成功後，可以立刻在GitHub頁面中看到遠程庫的內容已經和本地一模一樣：
 從現在起，只要本地作了提交，就可以通過命令：
-$ git push origin master
+$ git push 【name】 master
 把本地master分支的最新修改推送至GitHub，現在，你就擁有了真正的分佈式版本庫！
 
+欲瞭解目前已加進來的遠端儲存庫，可執行 
+$ git remote -v
+
+在新版 Git 中可以用 git remote rename 命令修改某個遠端儲存庫在本地的簡稱，改成 paul，可以執行下列指令：
+$ git remote rename 【old_name】 【new_name】
+值得留意的是這也改變了遠端分支的名稱，原來的 pb/master 分支現在變成 paul/master。
+
+當你為了種種原因想要移除某個遠端，像是換伺服器或是已不再使用某個特別的鏡像，又或是某個貢獻者已不再貢獻時。你可以使用git remote rm：
+$ git remote rm 【name】
 5::從遠程庫克隆
 上次我們講了先有本地庫，後有遠程庫的時候，如何關聯遠程庫。
 現在，假設我們從零開發，那麼最好的方式是先創建遠程庫，然後，從遠程庫克隆。
@@ -82,3 +92,13 @@ README.md
 你也許還注意到，GitHub給出的地址不止一個，還可以用https://github.com/michaelliao/gitskills.git這樣的地址。實際上，Git支持多種協議，默認的git://使用ssh，但也可以使用https等其他協議。
 使用https除了速度慢以外，還有個最大的麻煩是每次推送都必須輸入口令，但是在某些只開放http端口的公司內部就無法使用ssh協議而只能用https。
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
+<title></title>
+</head>
+<body>
+</body>
+</html>
